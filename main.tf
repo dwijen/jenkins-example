@@ -14,7 +14,7 @@ provider "aiven" {
 
 # Kafka service. Default started with 3 cluster.
 resource "aiven_service" "StreamingCluster-1" {
-  project = "myprojectdwijen"
+  project = "muneer-d23d"
   cloud_name = "aws-us-east-2"
   plan = "business-4"
   service_name = "streamingclusterone"
