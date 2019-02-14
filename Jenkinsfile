@@ -9,6 +9,7 @@ pipeline {
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                 sh  'ls -ltr'
                 sh 'terraform --version'
+                sh 'terraform init'
                 sh 'terraform apply -auto-approve'
             }
         }
