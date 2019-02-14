@@ -1,5 +1,5 @@
 provider "aiven" {
-  api_token = "valid_token"
+  api_token = "LjgKIyxhp78OQB41ulrArU1CA0wAy/HXJ17zHg5tGoyYBhIL7FYI8X/Yj/+Qwf8XuE9j9dtu+kYs9VXEduJZDioYHOGwMFOi3bffunganAO20StDdeA24Hl56z+bNU4jWkIx4FMa+KXc9RcJuDUrGj3Ce69/EB++gNbydRX6b7Viu/75+z4fM/gMp0iZ9UDmshe3ZSmivOnWsfgzXHUbUYOULXILA6BtRdzGTcwSMUVx88eyeTDVeWUGKRURzc5+sFiLlJuPfeN8/6fzGx+TGznfLPDhGJs="
 }
 
 # Project (Current evaluation credit applicable to Muneer-d23d project , so we can't use the credit to create another
