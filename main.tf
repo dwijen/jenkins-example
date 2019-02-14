@@ -13,16 +13,16 @@ provider "aiven" {
 ######################################################################################
 
 # Kafka service. Default started with 3 cluster.
-resource "aiven_service" "StreamingCluster-1" {
-  project = "muneer-d23d"
-  cloud_name = "aws-us-east-2"
-  plan = "business-4"
-  service_name = "streamingclusterone"
-  service_type = "kafka"
-  kafka_user_config {
-    kafka_connect = false
-    kafka_rest = false
-    kafka_version = "2.1"
-    schema_registry = true
-  }
-}
+#resource "aiven_service" "StreamingCluster-1" {
+#  project = "muneer-d23d"
+#  cloud_name = "aws-us-east-2"
+#  plan = "business-4"
+#  service_name = "streamingclusterone"
+#  service_type = "kafka"
+#  kafka_user_config {
+#    kafka_connect = false
+#    kafka_rest = false
+#    kafka_version = "2.1"
+#    schema_registry = true
+#  }
+#}
