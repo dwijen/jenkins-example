@@ -10,6 +10,7 @@ pipeline {
                 sh  'ls -ltr'
                 sh 'terraform --version'
                 sh 'go version'
+                sh 'go get -u github.com/aiven/terraform-provider-aiven'
                 sh 'terraform init'
                 sh 'terraform apply -auto-approve'
             }
