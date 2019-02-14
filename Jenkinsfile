@@ -2,6 +2,12 @@ pipeline {
 		agent any
 		 
 		stages {
+				stage(‘checkout’) {
+					steps {
+					 		git branch: ‘develop’, url: ‘git@your url’
+			 
+			 		}
+			    }
 				stage(‘Set Terraform path’) {
 				 	steps {
 				 		script {
@@ -14,13 +20,13 @@ pipeline {
  
 	 		    stage(‘Provision infrastructure’) {
 	                steps {
-				 			//dir(‘dev’)
-				 			//{
+				 			dir(‘dev’)
+				 			{
 								 sh ‘terraform init’
 								 sh ‘terraform plan -out=plan’
 								 // sh ‘terraform destroy -auto-approve’
 								 sh ‘terraform apply plan’
-							 //}
+							 }
 			        }
                 }
  
