@@ -1,4 +1,5 @@
 node {
+    agent any
     stage('Build') {
         sh 'echo "Hello World"'
         sh '''
