@@ -5,5 +5,6 @@ node {
             echo "Multiline shell steps works too via node"
             ls -lah
         '''
+        sh 'terraform -version'
     }
 }
